@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - PathCraft</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Mr Yacine ZAKOU</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+    <button id="theme-toggle" class="btn btn-outline-dark">🌙</button>
+
+  </nav>
+
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Mes Projets</h2>
+    <div class="row">
+
+      
+
+      <div id="carouselExampleIndicators" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/slide1.jpg" class="d-block w-100" alt="Image du projet 1">
+          </div>
+          <div class="carousel-item">
+            <img src="images/slide2.jpg" class="d-block w-100" alt="Image du projet 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/slide3.jpg" class="d-block w-100" alt="Image du projet 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Suivant</span>
+        </button>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/devops.jpg" class="card-img-top" alt="DevOps">
+          <div class="card-body">
+            <h5 class="card-title">Mise en place de DevOps - DEVMEDIA</h5>
+            <p class="card-text">Automatisation des processus de développement et de déploiement avec CI/CD, Docker et GitLab.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModalDevOps">En savoir plus</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/network.jpg" class="card-img-top" alt="Réseau">
+          <div class="card-body">
+            <h5 class="card-title">Établissement d'un réseau - FunkyTown</h5>
+            <p class="card-text">Conception et configuration d'un réseau local avec routage, VLANs, sécurité et supervision.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModalReseau">En savoir plus</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/stage-app.jpg" class="card-img-top" alt="Stage">
+          <div class="card-body">
+            <h5 class="card-title">Application de recherche de stage</h5>
+            <p class="card-text">Application web facilitant la recherche de stage par mots-clés, filtres, et localisation.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModalStage">En savoir plus</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/cpp.jpg" class="card-img-top" alt="C++">
+          <div class="card-body">
+            <h5 class="card-title">Application orientée objet - C++</h5>
+            <p class="card-text">Développement d'une application console avec architecture orientée objet en C++.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModalCpp">En savoir plus</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/arduino.jpg" class="card-img-top" alt="Arduino">
+          <div class="card-body">
+            <h5 class="card-title">Station météo Arduino</h5>
+            <p class="card-text">Conception d'une station météo embarquée avec capteurs et affichage des données en temps réel.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModalArduino">En savoir plus</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="projectModalDevOps" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Projet DevOps - DEVMEDIA</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>Durant mon stage chez DEVMEDIA (GRETA – Colombe, oct. 2023 - juil. 2024), j'ai participé à la construction des scripts d’automatisation de la configuration de l’infrastructure réseau et à l'automatisation de l'installation de la configuration avec VMware, vagrant, WSL. J'ai également mis en place un workflow d’intégration continue pour notre application avec docker, jenkins, ansible, terraform, déployé l’application sur le cloud (AWS et Azure), et mis en place le monitoring avec Grafana et Prometheus. Enfin, j'ai réalisé un support de formation à DevOps et formé l'équipe à cette nouvelle culture.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="projectModalReseau" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Projet Réseau - FunkyTown</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>Lors de mon projet au CESI – Angoulême (oct. 2020 - juil. 2021), j'ai été responsable de l'établissement d'un réseau internet pour FunkyTown. Les étapes clés ont inclus la réalisation du mockup avec Visio, la configuration d'IPV4, IPV6, DHCP et DNS, la configuration du PAT, VLAN, STP et du routage, ainsi que la sécurisation du réseau avec des firewalls.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="projectModalStage" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Application Web - Recherche de Stage</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>Ce projet web consistait à mettre en place une application de recherche de stage pour les étudiants. J'ai réalisé le MCD et le mockup/wireframe, créé les pages web en PHP, HTML, CSS et jQuery, élaboré la base de données avec le serveur Apache, et géré la relation back-end/front-end.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="projectModalCpp" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Application en C++</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>Dans le cadre de ce projet de programmation orientée objet, j'ai créé une application de vente en ligne de composants électroniques en C++. Les étapes ont inclus la modélisation des diagrammes UML, l'élaboration du code informatique, et la mise en place d'un système d'écoute asynchrone des communications multiplexées (Station Radio).</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="projectModalArduino" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Station météo Arduino</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>Ce projet de systèmes embarqués consistait à créer une station météo à partir d'une carte Arduino et de capteurs. J'ai réalisé la modélisation des diagrammes UML, élaboré le code informatique en langage C, inséré le code dans la carte Arduino, et mis en marche la station météo.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

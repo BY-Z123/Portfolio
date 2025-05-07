@@ -1,0 +1,109 @@
+/* Définir des couleurs de fond et de texte pour la section d'introduction */
+.hero {
+  background-image: url('https://via.placeholder.com/1500x500');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+/* Style global du site */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #212529;
+}
+
+/* Ajouter du padding au footer */
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+}
+
+/* Formulaire de contact */
+form input,
+form textarea {
+  border-radius: 0.375rem;
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+form .btn-primary {
+  font-weight: bold;
+}
+
+/* Message de confirmation */
+#confirmationMessage.alert {
+  margin-top: 1rem;
+}
+
+
+/* Mode sombre */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .navbar,
+.dark-mode footer {
+  background-color: #1f1f1f !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  border: 1px solid #333;
+}
+
+.dark-mode .btn {
+  background-color: #333;
+  color: #fff;
+}
+
+
+.hero {
+  background-image: url('images/header-bg.jpg'); /* Remplace par le chemin de ton image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Pour rendre le texte plus lisible */
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* Navbar personnalisée */
+.custom-navbar {
+  background-color: #f8f9fa; /* Couleur claire par défaut */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+  color: #000;
+}
+
+.dark-mode .custom-navbar {
+  background-color: #212529; /* Couleur foncée pour le mode sombre */
+}
+
+.dark-mode .custom-navbar .nav-link,
+.dark-mode .custom-navbar .navbar-brand {
+  color: #fff;
+}
